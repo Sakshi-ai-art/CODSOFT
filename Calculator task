@@ -1,0 +1,33 @@
+# Simple Calculator
+
+# Step 1: Take input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Step 2: Ask the user to choose an operation
+print("Choose operation:")
+print("1. Addition (+)")
+print("2. Subtraction (-)")
+print("3. Multiplication (*)")
+print("4. Division (/)")
+
+operation = input("Enter your choice (+, -, *, /): ")
+
+# Step 3: Perform the operation and display the result
+if operation == '+':
+    result = num1 + num2
+    print("Result:", result)
+elif operation == '-':
+    result = num1 - num2
+    print("Result:", result)
+elif operation == '*':
+    result = num1 * num2
+    print("Result:", result)
+elif operation == '/':
+    if num2 != 0:
+        result = num1 / num2
+        print("Result:", result)
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Invalid operation selected.")
